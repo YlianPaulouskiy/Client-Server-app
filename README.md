@@ -1,5 +1,5 @@
 # Client-Server-app
 
-## dbConnector -> Resy Api Server  
+## dbConnector -> Rest Api Server  
  
-## demo -> view 
+## demo -> java android View
