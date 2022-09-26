@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Control manager</string>
+    <string name="view_all_models">View all models</string>
+    <string name="add_model">Add model</string>
+    <string name="enter_auto_mark">Enter auto mark</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+</resources>

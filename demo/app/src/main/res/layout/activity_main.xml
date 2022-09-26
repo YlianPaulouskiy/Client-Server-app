@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<AbsoluteLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="113dp"
+        android:text="Android Rest Api App"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="113dp"
+        android:layout_y="256dp"
+        android:onClick="goToCreateActivity"
+        android:text="@string/add_model"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="73dp"
+        android:layout_y="358dp"
+        android:onClick="goToViewActivity"
+        android:text="@string/view_all_models"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+</AbsoluteLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

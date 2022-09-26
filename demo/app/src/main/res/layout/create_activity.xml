@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:hint="@string/enter_auto_mark"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/amountDoors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AbsoluteLayout
+        android:layout_width="412dp"
+        android:layout_height="731dp"
+        tools:ignore="Deprecated,MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/accounting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_x="127dp"
+            android:layout_y="429dp"
+            android:text="Accounting"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="560dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="74dp"
+            android:layout_y="181dp"
+            android:text="Select amount of doors"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="228dp"
+            android:layout_y="529dp"
+            android:onClick="createModel"
+            android:text="@string/create"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="629dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="81dp"
+            android:layout_y="37dp"
+            android:text="Create new auto"
+            android:textSize="32sp"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="42dp"
+            android:layout_y="530dp"
+            android:onClick="goToMainActivity"
+            android:text="@string/cancel"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="173dp"
+            android:layout_y="635dp"
+            android:textSize="32sp" />
+
+    </AbsoluteLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
