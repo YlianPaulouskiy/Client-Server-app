@@ -13,6 +13,15 @@ public class Car {
     @SerializedName("accounting")
     private Boolean accounting;
 
+    public Car() {
+    }
+
+    public Car(String mark, int doorCount, Boolean accounting) {
+        this.mark = mark;
+        this.doorCount = doorCount;
+        this.accounting = accounting;
+    }
+
     public Long getId() {
         return id;
     }
@@ -43,5 +52,15 @@ public class Car {
 
     public void setAccounting(Boolean accounting) {
         this.accounting = accounting;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", mark='" + mark + '\'' +
+                ", doorCount=" + doorCount +
+                ", accounting=" + accounting +
+                '}';
     }
 }

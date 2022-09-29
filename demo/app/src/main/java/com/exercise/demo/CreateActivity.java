@@ -80,9 +80,10 @@ public class CreateActivity extends AppCompatActivity {
                 baseUrl(CarApi.JSON_API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
+        Car car = new Car(markText.getText().toString(), amountDoors.getValue(), checkAccounting.isChecked());
+        System.out.println(car);
         CarApi carApi = retrofit.create(CarApi.class);
-        Call<Car> call = carApi.saveCar(markText.getText().toString(), amountDoors.getValue(), checkAccounting.isChecked());
+        Call<Car> call = carApi.saveCar(car);
         call.enqueue(new Callback<Car>() {
             @Override
             public void onResponse(Call<Car> call, Response<Car> response) {
@@ -91,6 +92,7 @@ public class CreateActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Car> call, Throwable t) {
+                t.printStackTrace();
                 resultView.setText("Error");
             }
         });

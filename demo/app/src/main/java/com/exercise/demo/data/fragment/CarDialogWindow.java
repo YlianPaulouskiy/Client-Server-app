@@ -23,9 +23,9 @@ public class CarDialogWindow extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder window = new AlertDialog.Builder(getActivity());
         window.setTitle("About car #" + id);
-        window.setMessage("Mark: " + mark);
-        window.setMessage("Door count:  " + doorCount);
-        window.setMessage("Accounting: " + accounting);
+        window.setMessage("Mark: " + mark +
+                "\nDoor count:  " + doorCount +
+                "\nAccounting: " + accounting);
         return window.create();
     }
 }

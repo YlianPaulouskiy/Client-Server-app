@@ -87,6 +87,7 @@ public class ViewActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Car>> call, Throwable t) {
                 textView.setText("Failure Connection");
+                t.printStackTrace();
             }
         });
     }
